@@ -12,8 +12,6 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-
-
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -50,6 +48,12 @@ body {
 .gallery {
     background-color: var(--color-green);
 }
+
+.gallery-image {
+    width: 200px;
+    margin-left: 8px;
+    object-fit: cover;
+}         
 
 h1,
 h2 {
