@@ -1,0 +1,55 @@
+html {
+    height: 100%;
+}
+
+body {
+    --color-dark: #041C32;
+    --color-medium: #04293A;
+    --color-green: #064663;
+    --color-yellow: #ECB365;
+
+    margin: 0;
+    height: 100%;
+
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.section {
+    width: 100%;
+    padding: 48px 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.main {
+    background-color: var(--color-dark);
+    flex-grow: 1;
+}
+
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+a {
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
