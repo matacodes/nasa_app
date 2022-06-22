@@ -1,3 +1,5 @@
+const NUMBER_OF_GALLERY_ITEMS = 20;
+
 function getRandomNumber(min, max) {
   return (Math.random() * (max - min) + min).toFixed();
 }
@@ -10,7 +12,7 @@ async function getGalleryData() {
 
   const galleryItems = [];
 
-  for (let index = 0; index < 3; index++) {
+  for (let index = 0; index < NUMBER_OF_GALLERY_ITEMS; index++) {
     const randomIndex = getRandomNumber(0, galleryData.photos.length);
     galleryItems.push(galleryData.photos[randomIndex]);
   }
@@ -23,17 +25,37 @@ function addGalleryElements(galleryItems) {
 
   if (galleryContainer) {
     galleryItems.forEach((item) => {
-      //   const anchorElement = document.createElement("a");
-      //   anchorElement.href = "mars.html";
+      const slide = document.createElement("div");
+      slide.classList.add("swiper-slide");
+
+      const wrapper = document.createElement("div");
+      wrapper.classList.add("image-wrapper");
 
       const imageElement = document.createElement("img");
       imageElement.src = item.img_src;
       imageElement.alt = "Mars picture";
       imageElement.classList.add("gallery-image");
 
-      //   anchorElement.appendChild(imageElement);
+      wrapper.appendChild(imageElement);
+      slide.appendChild(wrapper);
+      galleryContainer.appendChild(slide);
+    });
 
-      galleryContainer.appendChild(imageElement);
+    const swiper = new Swiper(".swiper", {
+      centeredSlides: true,
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      // Optional parameters
+      loop: true,
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
   }
 }

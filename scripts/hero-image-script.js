@@ -29,7 +29,7 @@ function setHeroDescription(descriptionToChange) {
 async function init() {
   const heroImageData = await getHeroData();
 
-  setHeroImageUrl(heroImageData.url);
+  setHeroImageUrl(heroImageData.hdurl);
   setHeroDescription(heroImageData.explanation);
 }
 

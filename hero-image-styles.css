@@ -1,4 +1,7 @@
-/* Common */
+html {
+  height: 100%;
+}
+
 body {
   --color-dark: #041c32;
   --color-medium: #04293a;
@@ -34,35 +37,6 @@ body {
   flex-grow: 1;
 }
 
-.main-image {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-.weather {
-  background-color: var(--color-medium);
-}
-
-.gallery {
-  background-color: var(--color-green);
-}
-
-.gallery-image {
-  display: block;
-  height: auto;
-  width: 100%;
-  object-fit: cover;
-}
-
-.image-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
 h1,
 h2 {
   margin-top: 0;
@@ -70,20 +44,10 @@ h2 {
 
 a {
   margin-bottom: 20px;
+  color: var(--color-yellow);
 }
 
 img {
-  height: 300px;
-}
-
-.swiper {
   width: 100%;
-  height: 300px;
-  margin: 0 !important;
-}
-
-@media (min-width: 768px) {
-  .swiper {
-    width: 600px;
-  }
+  height: auto;
 }
