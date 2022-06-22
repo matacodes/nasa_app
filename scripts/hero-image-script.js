@@ -3,8 +3,9 @@ async function getHeroData() {
     "https://api.nasa.gov/planetary/apod?api_key=RzSVtSdYidZJNaO9QVhh5eYS5z25ECPuZsp5gLid"
   );
   const heroImageData = await heroImageDataRaw.json();
+  //console.log("heroImageData: ", heroImageData);
   // ctrl shift l
-  // console.log("image: ", image);
+  //console.log("image: ", image);
 
   return heroImageData;
 }
@@ -28,7 +29,7 @@ function setHeroDescription(descriptionToChange) {
 async function init() {
   const heroImageData = await getHeroData();
 
-  setHeroImageUrl(heroImageData.url);
+  setHeroImageUrl(heroImageData.hdurl);
   setHeroDescription(heroImageData.explanation);
 }
 

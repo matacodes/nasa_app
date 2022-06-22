@@ -1,62 +1,73 @@
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>👾</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 
-<body>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
     <div class="wrapper">
-        <div class="section main">
-            <div class="container">
-
-                <h1>👾 Nasa App 👾</h1>
-                <h2>Zdjęcie dnia od NASA</h2>
-                <a href="hero-image.html">
-                    <img id="hero-image" class="main-image"
-                        src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/v404cyg_lg.jpeg"
-                        alt="Nasa photo of the day">
-                </a>
-            </div>
-
+      <div class="section main">
+        <div class="container">
+          <h1>👾 Nasa App 👾</h1>
+          <h2>Zdjęcie dnia od NASA</h2>
+          <a href="hero-image.html">
+            <img
+              id="hero-image"
+              class="main-image"
+              src="https://thumbs.gfycat.com/BackIllinformedAsianelephant-size_restricted.gif"
+              alt="Nasa photo of the day"
+            />
+          </a>
         </div>
-        <div class="section weather">
-            <div class="container">
-
-                <h2>Pogoda na Marsie</h2>
-                <p>Obecna pogoda na Marsie to:</p>
-            </div>
+      </div>
+      <div class="section weather">
+        <div class="container">
+          <h2>
+            Obecnie w kosmosie jest
+            <span id="people-in-space-number"></span> osób:
+          </h2>
+          <ul id="people-in-space-list"></ul>
         </div>
+      </div>
 
-        <div class="section gallery">
-            <div class="container">
-
-                <h2>Zdjęcia z marsjańskiego łazika</h2>
-                <a href="mars.html">
-                    <img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/jpegpia25287.jpeg"
-                        alt="Zdjęcie 1">
-                </a>
-                <a href="mars.html">
-                    <img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/52099923324_5d3bca3159_o.jpeg"
-                        alt="Zdjęcie 2">
-                </a>
-                <a href="mars.html">
-                    <img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/1-cal-main-image1041.jpg"
-                        alt="Zdjęcie 3">
-                </a>
+      <div class="section gallery">
+        <div class="container">
+          <h2>Losowe zdjęcia z marsjańskiego łazika</h2>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="gallery-container">
+              <!-- Slides -->
             </div>
-        </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="scripts\hero-image-script.js"></script>
-</body>
-
+    <script src="scripts\space-people-script.js"></script>
+    <script src="scripts\gallery-script.js"></script>
+  </body>
 </html>
