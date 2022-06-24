@@ -32,9 +32,9 @@ nasa_app
    3. http://api.open-notify.org/astros.json - This API returns the current number of people in space. When known it also returns the names and spacecraft those people are on. This API takes no inputs.
 Na potrzebu wyświetlania storny na platfornie Github zostało wprowadzone rozwiązanie niesynchronizacji githuba z serwerem api http. Github współpracuje tylko ze skryptami na bazie protokołów https, dlatego na potrzeby poprawności wyświetlania projektu na tej platformie, plik json został umieszczony w kodzie strony jako backup danych w zmiennej.
    
+5. Wykorzystanie biblioteki zewnętrznej do sekscji galerii zdjęć z łazika: https://swiperjs.com
 
-
-5. Harmonogram realizacji projektu: 
+6. Harmonogram realizacji projektu: 
    1. Wstępne zebranie informacji o projekcie 
    2. Postawienie celu oraz założeń 
    3. Pykonanie „szkieletu” strony 
