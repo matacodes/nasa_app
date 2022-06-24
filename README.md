@@ -7,9 +7,9 @@ http://api.open-notify.org/astros.json
 http://open-notify.org/Open-Notify-API/People-In-Space/
 
 
-Cel projektu: Stworzenie aplikacji, dzięki której dowiemy się podstawowych ciekawostek na temat marsa tzn. zdjęć z łazika, ile osób znajduje się na marsie, a także codzienne nowe zdjęcie z nasa.  
 
-Projekt musi być łatwy w przekazie dla użytkownika. 
+
+Cel projektu: Stworzenie aplikacji, dzięki której dowiemy się podstawowych ciekawostek na temat marsa tzn. zdjęć z łazika, ile osób znajduje się na marsie, a także codzienne nowe zdjęcie z nasa.  Projekt musi być łatwy w przekazie dla użytkownika. 
 
  
 
@@ -19,7 +19,7 @@ Grupa docelowa: Grupą docelową jest każdy użytkownik, który interesuje się
 
 Założenia projektu: 
 
--przejrzysty i miły dla oka interfejs 
+- przejrzysty i miły dla oka interfejs 
 
 - zdjęcia wykonane przez łazik marsjański  
 
